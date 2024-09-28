@@ -1,0 +1,74 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Sep 28 22:23:34 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'cong' on host 'fpga03' (Linux_x86_64 version 5.19.0-32-generic) on Sat Sep 28 22:23:35 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul'
+WARNING: [HLS 200-2053] The vitis_hls executable is deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'real_matmul.tcl'
+INFO: [HLS 200-1510] Running: open_project real_matmul 
+INFO: [HLS 200-10] Creating and opening project '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul'.
+INFO: [HLS 200-1510] Running: set_top real_matmul 
+INFO: [HLS 200-1510] Running: add_files /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src/real_matmul.cpp -cflags  -g -I /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src 
+INFO: [HLS 200-10] Adding design file '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src/real_matmul.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu250-figd2104-2L-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_rtl -deadlock_detection none 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode=1 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format xo -ipname real_matmul 
+INFO: [HLS 200-1510] Running: csynth_design -synthesis_check 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.15 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.21 seconds; current allocated memory: 361.809 MB.
+INFO: [HLS 200-10] Analyzing design file '../../../src/real_matmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.67 seconds. CPU system time: 0.72 seconds. Elapsed time: 2.45 seconds; current allocated memory: 363.648 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-1995] There were 291 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,006 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 987 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 991 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul/solution/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'INNER_ROW_COL' is marked as complete unroll implied by the pipeline pragma (../../../src/real_matmul.cpp:62:13)
+INFO: [HLS 214-186] Unrolling loop 'INNER_ROW_COL' (../../../src/real_matmul.cpp:62:13) in function 'real_matmul' completely with a factor of 150 (../../../src/real_matmul.cpp:14:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_A_COLS> at ../../../src/real_matmul.cpp:29:9 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_B_COLS> at ../../../src/real_matmul.cpp:38:9 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_C_COLS_INIT> at ../../../src/real_matmul.cpp:50:9 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_C_COLS> at ../../../src/real_matmul.cpp:73:9 
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.92 seconds. CPU system time: 0.6 seconds. Elapsed time: 7.43 seconds; current allocated memory: 373.578 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 373.578 MB.
+INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:10; Allocated memory: 12.770 MB.
+INFO: [HLS 200-1510] Running: close_project 
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 7.86 seconds. Total CPU system time: 1.82 seconds. Total elapsed time: 13.46 seconds; peak allocated memory: 373.578 MB.

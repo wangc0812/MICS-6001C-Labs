@@ -1,0 +1,3 @@
+relativeroot=/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA
+original_argv=-c --mode hls --config ./hls_config.cfg --work_dir ./build_hls 
+

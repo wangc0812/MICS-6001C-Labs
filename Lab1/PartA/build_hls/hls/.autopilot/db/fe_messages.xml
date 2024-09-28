@@ -1,0 +1,39 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=real_matmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/real_matmul.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=MatA_DRAM offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/real_matmul.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=MatB_DRAM offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/real_matmul.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=MatC_DRAM offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/real_matmul.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/real_matmul.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=MatA complete dim=2" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/real_matmul.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=MatB complete dim=1" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/real_matmul.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="real_matmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/real_matmul.cpp:62:13" msg_body="Loop 'INNER_ROW_COL' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="INNER_ROW_COL"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/real_matmul.cpp:14:0" msg_body="Unrolling loop 'INNER_ROW_COL' (src/real_matmul.cpp:62:13) in function 'real_matmul' completely with a factor of 150">
+        <args Factor="150" LoopLoc="src/real_matmul.cpp:62:13" LoopName="INNER_ROW_COL"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/real_matmul.cpp:21:9" msg_body="Applying array_reshape to 'MatA': Complete reshaping on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="MatA"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/real_matmul.cpp:22:12" msg_body="Applying array_reshape to 'MatB': Complete reshaping on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="MatB"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,579 @@
+<ENTRY>
+{
+ "thisFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:52 2024",
+ "timestampMillis": "1727533432172",
+ "buildStep": {
+  "cmdId": "330aebd5-26f6-4cd5-868d-2097309c456a",
+  "name": "v++",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -g --save-temps -t sw_emu --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --temp_dir ./_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1 -o./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin _x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xo ",
+  "args": [
+   "-l",
+   "-g",
+   "--save-temps",
+   "-t",
+   "sw_emu",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--temp_dir",
+   "./_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-o./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin",
+   "_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:52 2024",
+ "timestampMillis": "1727533432174",
+ "status": {
+  "cmdId": "330aebd5-26f6-4cd5-868d-2097309c456a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Sep 28 22:23:54 2024",
+ "timestampMillis": "1727533434834",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "real_matmul.link",
+    "file": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "real_matmul",
+     "file": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/real_matmul/real_matmul/cpu_sources/real_matmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "real_matmul_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.1. SW Build 5074859 on 2024-05-20-23:21:20"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:23:55 2024",
+ "timestampMillis": "1727533435143",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:55 2024",
+ "timestampMillis": "1727533435149",
+ "buildStep": {
+  "cmdId": "c6ea50e0-df3d-4be0-bdde-e4be944a139f",
+  "name": "regiongen",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_regiongen.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/../runtime/bin/regiongen_new -v -m /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.xml -r /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.rtd -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.xml",
+   "-r",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.rtd",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:55 2024",
+ "timestampMillis": "1727533435150",
+ "status": {
+  "cmdId": "c6ea50e0-df3d-4be0-bdde-e4be944a139f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:56 2024",
+ "timestampMillis": "1727533436148",
+ "status": {
+  "cmdId": "c6ea50e0-df3d-4be0-bdde-e4be944a139f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:56 2024",
+ "timestampMillis": "1727533436159",
+ "buildStep": {
+  "cmdId": "8a1d0cd6-3919-4b19-a4b3-51318e0a4ab8",
+  "name": "gcc",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul/real_matmul_kernel_gcc.log",
+  "commandLine": "/opt/Xilinx/Vivado/2024.1/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /opt/Xilinx/Vitis_HLS/2024.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/auto_cc/include -I /opt/Xilinx/Vitis_HLS/2024.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2024.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2024.1/bin/../data/emulation/include -I /usr/include/x86_64-linux-gnu -std=c++14 -g -I /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/real_matmul.o -MP -MF obj/real_matmul.Cd /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/real_matmul/real_matmul/cpu_sources/real_matmul.cpp -o obj/real_matmul.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2024.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2024.1/bin/../data/emulation/include",
+   "-I",
+   "/usr/include/x86_64-linux-gnu",
+   "-std=c++14",
+   "-g",
+   "-I",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/real_matmul.o",
+   "-MP",
+   "-MF",
+   "obj/real_matmul.Cd",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/real_matmul/real_matmul/cpu_sources/real_matmul.cpp",
+   "-o",
+   "obj/real_matmul.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:56 2024",
+ "timestampMillis": "1727533436162",
+ "status": {
+  "cmdId": "8a1d0cd6-3919-4b19-a4b3-51318e0a4ab8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:57 2024",
+ "timestampMillis": "1727533437166",
+ "status": {
+  "cmdId": "8a1d0cd6-3919-4b19-a4b3-51318e0a4ab8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:57 2024",
+ "timestampMillis": "1727533437174",
+ "buildStep": {
+  "cmdId": "95b8c987-b778-4d52-882f-fd1b89dce073",
+  "name": "ar",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul/real_matmul_ar.log",
+  "commandLine": "/opt/Xilinx/Vivado/2024.1/tps/lnx64/binutils-2.26/bin/ar -cr /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul/real_matmul.csim_cu.a /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul/obj/real_matmul.o",
+  "args": [
+   "-cr",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul/real_matmul.csim_cu.a",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul/obj/real_matmul.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:57 2024",
+ "timestampMillis": "1727533437176",
+ "status": {
+  "cmdId": "95b8c987-b778-4d52-882f-fd1b89dce073",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:57 2024",
+ "timestampMillis": "1727533437203",
+ "status": {
+  "cmdId": "95b8c987-b778-4d52-882f-fd1b89dce073",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:57 2024",
+ "timestampMillis": "1727533437213",
+ "buildStep": {
+  "cmdId": "51055824-05e3-46a4-bea2-2d318e53c1ff",
+  "name": "g++",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_xcl_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2024.1/tps/lnx64/gcc-8.3.0/bin/g++ -I . -I /opt/Xilinx/Vitis_HLS/2024.1/bin/../include -I /opt/Xilinx/Vitis_HLS/2024.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2024.1/bin/../common/technology/autopilot/opencl -I /opt/Xilinx/Vitis/2024.1/bin/../data/emulation/include -I /opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2024.1/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/opt/Xilinx/Vitis/2024.1/bin/../data/emulation/include",
+   "-I",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:57 2024",
+ "timestampMillis": "1727533437215",
+ "status": {
+  "cmdId": "51055824-05e3-46a4-bea2-2d318e53c1ff",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438409",
+ "status": {
+  "cmdId": "51055824-05e3-46a4-bea2-2d318e53c1ff",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438416",
+ "buildStep": {
+  "cmdId": "5215da5c-dba0-4df3-b740-b2e023d2d878",
+  "name": "g++",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_top_gpp.log",
+  "commandLine": "/opt/Xilinx/Vivado/2024.1/tps/lnx64/gcc-8.3.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,real_matmul.link.so -o real_matmul.link.so real_matmul/real_matmul.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /opt/Xilinx/Vitis_HLS/2024.1/bin/../lib/lnx64.o -lhlsmathsim -L /opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fpo_v7_1 -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel -Wl,-rpath,/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fpo_v7_1 -L /opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /opt/Xilinx/Vivado/2024.1/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,real_matmul.link.so",
+   "-o",
+   "real_matmul.link.so",
+   "real_matmul/real_matmul.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fpo_v7_1",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_1_bitacc_cmodel",
+   "-Wl,-rpath,/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fpo_v7_1",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/opt/Xilinx/Vitis_HLS/2024.1/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/opt/Xilinx/Vivado/2024.1/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438417",
+ "status": {
+  "cmdId": "5215da5c-dba0-4df3-b740-b2e023d2d878",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438565",
+ "status": {
+  "cmdId": "5215da5c-dba0-4df3-b740-b2e023d2d878",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438744",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438758",
+ "buildStep": {
+  "cmdId": "a9231e92-2c39-46a4-8a52-c66114ebb40a",
+  "name": "xclbinutil",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_xclbinutil.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/xclbinutil --add-section BITSTREAM:RAW:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.so --force --target sw_emu --add-section :JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.rtd --append-section :JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_xml.rtd --add-section BUILD_METADATA:JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_build.rtd --add-section EMBEDDED_METADATA:RAW:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.xml --add-section DEBUG_DATA:RAW:/dev/null --add-section SYSTEM_METADATA:RAW:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json --output /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   ":JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.rtd",
+   "--append-section",
+   ":JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json",
+   "--output",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438759",
+ "status": {
+  "cmdId": "a9231e92-2c39-46a4-8a52-c66114ebb40a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438941",
+ "status": {
+  "cmdId": "a9231e92-2c39-46a4-8a52-c66114ebb40a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438948",
+ "buildStep": {
+  "cmdId": "95c704c9-926e-499c-8548-9e427492a846",
+  "name": "xclbinutil",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin.info",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/xclbinutil --quiet --info --input /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:58 2024",
+ "timestampMillis": "1727533438949",
+ "status": {
+  "cmdId": "95c704c9-926e-499c-8548-9e427492a846",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:59 2024",
+ "timestampMillis": "1727533439122",
+ "status": {
+  "cmdId": "95c704c9-926e-499c-8548-9e427492a846",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:23:59 2024",
+ "timestampMillis": "1727533439156",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:59 2024",
+ "timestampMillis": "1727533439163",
+ "status": {
+  "cmdId": "330aebd5-26f6-4cd5-868d-2097309c456a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:23:59 2024",
+ "timestampMillis": "1727533439319",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/v++_link_real_matmul.link_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:23:59 2024",
+ "timestampMillis": "1727533439321",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/v++_link_real_matmul.link_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

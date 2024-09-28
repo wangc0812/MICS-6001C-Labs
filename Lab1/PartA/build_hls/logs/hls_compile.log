@@ -1,0 +1,354 @@
+INFO: [v++ 60-1548] Creating build summary session with primary output /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/build_hls.hlscompile_summary, at Sat Sep 28 22:24:27 2024
+INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls -config /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/./hls_config.cfg -cmdlineconfig /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+  **** SW Build 5069499 on May 21 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Sep 28 22:24:28 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] For user 'cong' on host 'fpga03' (Linux_x86_64 version 5.19.0-32-generic) on Sat Sep 28 22:24:30 CST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA'
+WARNING: [HLS 200-2059] The 'syn.output.format' name is deprecated, use 'package.output.format' instead /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(11)
+INFO: [HLS 200-2005] Using work_dir /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2059] The 'syn.output.format' name is deprecated, use 'package.output.format' instead /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=./src/real_matmul.cpp' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(4)
+INFO: [HLS 200-10] Adding design file '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src/real_matmul.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=./src/tb_main.cpp' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding test bench file '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src/tb_main.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=real_matmul' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vitis' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(8)
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1465] Applying ini 'part=xcu250-figd2104-2l-e' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1465] Applying ini 'clock=8ns' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(9)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12%' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(10)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.96ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=rtl' from /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg(11)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3.5 seconds. CPU system time: 0.54 seconds. Elapsed time: 3.88 seconds; current allocated memory: 379.629 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/real_matmul.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.48 seconds. CPU system time: 0.75 seconds. Elapsed time: 3.33 seconds; current allocated memory: 381.699 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 200-1995] There were 291 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,006 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 987 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 981 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 984 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 984 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 987 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,298 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 740 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 737 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 736 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 736 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 736 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 743 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 770 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'INNER_ROW_COL' is marked as complete unroll implied by the pipeline pragma (src/real_matmul.cpp:62:13)
+INFO: [HLS 214-186] Unrolling loop 'INNER_ROW_COL' (src/real_matmul.cpp:62:13) in function 'real_matmul' completely with a factor of 150 (src/real_matmul.cpp:14:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'MatC_DRAM' with compact=none mode in 16-bits
+INFO: [HLS 214-241] Aggregating maxi variable 'MatB_DRAM' with compact=none mode in 16-bits
+INFO: [HLS 214-241] Aggregating maxi variable 'MatA_DRAM' with compact=none mode in 16-bits
+INFO: [HLS 214-248] Applying array_reshape to 'MatA': Complete reshaping on dimension 2. (src/real_matmul.cpp:21:9)
+INFO: [HLS 214-248] Applying array_reshape to 'MatB': Complete reshaping on dimension 1. (src/real_matmul.cpp:22:12)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_A_COLS> at src/real_matmul.cpp:29:9 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_B_COLS> at src/real_matmul.cpp:38:9 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_C_COLS_INIT> at src/real_matmul.cpp:50:9 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< MAT_C_COLS> at src/real_matmul.cpp:73:9 
+INFO: [HLS 214-115] Multiple burst reads of length 3750 and bit width 128 has been inferred on bundle 'mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (src/real_matmul.cpp:36:5)
+INFO: [HLS 214-115] Multiple burst writes of length 2500 and bit width 128 has been inferred on bundle 'mem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (src/real_matmul.cpp:71:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.87 seconds. CPU system time: 0.73 seconds. Elapsed time: 7.66 seconds; current allocated memory: 383.602 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 383.602 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 384.488 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] src/real_matmul.cpp:30: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 385.961 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'real_matmul' (src/real_matmul.cpp:10:9)...150 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.31 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.34 seconds; current allocated memory: 416.488 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'MAT_A_ROWS'(src/real_matmul.cpp:27:5) and 'MAT_A_COLS'(src/real_matmul.cpp:29:9) in function 'real_matmul' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'MAT_B_ROWS'(src/real_matmul.cpp:36:5) and 'MAT_B_COLS'(src/real_matmul.cpp:38:9) in function 'real_matmul' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'MAT_C_ROWS_INIT'(src/real_matmul.cpp:48:5) and 'MAT_C_COLS_INIT'(src/real_matmul.cpp:50:9) in function 'real_matmul' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'OUTER_ROWS'(src/real_matmul.cpp:57:5) and 'OUTER_COLS'(src/real_matmul.cpp:59:9) in function 'real_matmul' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'MAT_C_ROWS'(src/real_matmul.cpp:71:5) and 'MAT_C_COLS'(src/real_matmul.cpp:73:9) in function 'real_matmul' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'MAT_A_ROWS' (src/real_matmul.cpp:27:5) in function 'real_matmul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'MAT_B_ROWS' (src/real_matmul.cpp:36:5) in function 'real_matmul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'MAT_C_ROWS_INIT' (src/real_matmul.cpp:48:5) in function 'real_matmul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'OUTER_ROWS' (src/real_matmul.cpp:57:5) in function 'real_matmul'.
+INFO: [XFORM 203-541] Flattening a loop nest 'MAT_C_ROWS' (src/real_matmul.cpp:71:5) in function 'real_matmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'MatB' (src/real_matmul.cpp:39:24)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.39 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.48 seconds; current allocated memory: 465.883 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'real_matmul' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'real_matmul_Pipeline_MAT_A_ROWS_MAT_A_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln30) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'MAT_A_ROWS_MAT_A_COLS'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 77, loop 'MAT_A_ROWS_MAT_A_COLS'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.33 seconds; current allocated memory: 465.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 465.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'MAT_B_ROWS_MAT_B_COLS'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'MAT_B_ROWS_MAT_B_COLS'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 465.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 465.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'real_matmul_Pipeline_MAT_C_ROWS_INIT_MAT_C_COLS_INIT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln51) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'MAT_C_ROWS_INIT_MAT_C_COLS_INIT'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'MAT_C_ROWS_INIT_MAT_C_COLS_INIT'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 465.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 465.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'real_matmul_Pipeline_OUTER_ROWS_OUTER_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_143) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_142) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_141) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_139) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_138) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_137) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_134) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_133) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_132) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_130) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_125) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_121) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_120) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_119) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_116) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_114) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_112) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_111) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_106) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_105) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_104) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_102) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_101) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_100) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_96) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_95) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_87) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_86) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_83) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_78) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_75) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_67) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_59) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_55) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_39) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_31) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_27) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln63) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=empty_29) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'OUTER_ROWS_OUTER_COLS'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'OUTER_ROWS_OUTER_COLS'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.85 seconds. CPU system time: 0.12 seconds. Elapsed time: 1.36 seconds; current allocated memory: 470.641 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.29 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.37 seconds; current allocated memory: 470.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln74) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'MAT_C_ROWS_MAT_C_COLS'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, loop 'MAT_C_ROWS_MAT_C_COLS'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 471.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 472.082 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'real_matmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 472.102 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.15 seconds; current allocated memory: 472.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'real_matmul_Pipeline_MAT_A_ROWS_MAT_A_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'real_matmul_Pipeline_MAT_A_ROWS_MAT_A_COLS' pipeline 'MAT_A_ROWS_MAT_A_COLS' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7ns_8ns_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'real_matmul_Pipeline_MAT_A_ROWS_MAT_A_COLS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 474.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS' pipeline 'MAT_B_ROWS_MAT_B_COLS' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS/m_axi_mem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'real_matmul_Pipeline_MAT_B_ROWS_MAT_B_COLS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.27 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.43 seconds; current allocated memory: 477.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'real_matmul_Pipeline_MAT_C_ROWS_INIT_MAT_C_COLS_INIT' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'real_matmul_Pipeline_MAT_C_ROWS_INIT_MAT_C_COLS_INIT' pipeline 'MAT_C_ROWS_INIT_MAT_C_COLS_INIT' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7ns_8ns_15_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'real_matmul_Pipeline_MAT_C_ROWS_INIT_MAT_C_COLS_INIT'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.24 seconds; current allocated memory: 478.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'real_matmul_Pipeline_OUTER_ROWS_OUTER_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'real_matmul_Pipeline_OUTER_ROWS_OUTER_COLS' pipeline 'OUTER_ROWS_OUTER_COLS' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_16ns_16_4_1': 87 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7ns_8ns_15_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_16_1_1': 63 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'real_matmul_Pipeline_OUTER_ROWS_OUTER_COLS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.24 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.34 seconds; current allocated memory: 487.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS' pipeline 'MAT_C_ROWS_MAT_C_COLS' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS/m_axi_mem_BREADY' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_7ns_8ns_15_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'real_matmul_Pipeline_MAT_C_ROWS_MAT_C_COLS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.6 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.83 seconds; current allocated memory: 501.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'real_matmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'real_matmul/mem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'real_matmul/MatA_DRAM' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'real_matmul/MatB_DRAM' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'real_matmul/MatC_DRAM' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'real_matmul' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'MatA_DRAM', 'MatB_DRAM', 'MatC_DRAM' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'real_matmul'.
+INFO: [RTMG 210-278] Implementing memory 'real_matmul_MatA_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'real_matmul_MatB_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'real_matmul_MatC_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.28 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.44 seconds; current allocated memory: 503.129 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.59 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.2 seconds; current allocated memory: 506.977 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.08 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.29 seconds; current allocated memory: 519.344 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for real_matmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for real_matmul.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.05 MHz
+INFO: [HLS 200-112] Total CPU user time: 15.58 seconds. Total CPU system time: 2.98 seconds. Total elapsed time: 24.75 seconds; peak allocated memory: 519.344 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 29s

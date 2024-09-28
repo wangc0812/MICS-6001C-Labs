@@ -1,0 +1,31 @@
+{
+  "0": {
+    "basicblocks": 31,
+    "calls": "",
+    "file": "real_matmul.cpp",
+    "fileloc": 10,
+    "instructions": 991,
+    "loads": {
+      "L": 302,
+      "T": 2
+    },
+    "name": "real_matmul",
+    "stores": {
+      "L": 4,
+      "T": 1
+    },
+    "total_instructions": 991
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "0",
+    "file": "real_matmul.cpp",
+    "fileloc": 10,
+    "instructions": 13,
+    "loads": {
+      "L": 6
+    },
+    "name": "__stub____xlnx_cl_single_thread_real_matmul",
+    "total_instructions": 1004
+  }
+}

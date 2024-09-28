@@ -1,0 +1,125 @@
+<ENTRY>
+{
+ "thisFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xclbin.package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Sep 28 22:24:03 2024",
+ "timestampMillis": "1727533443319",
+ "buildStep": {
+  "cmdId": "fea40ea5-e541-4b95-a9db-9d7017ab3f6a",
+  "name": "v++",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x/package/package.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -p ./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin -g --save-temps -t sw_emu --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --package.out_dir ./package.sw_emu -o ./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xclbin ",
+  "args": [
+   "-p",
+   "./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin",
+   "-g",
+   "--save-temps",
+   "-t",
+   "sw_emu",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--package.out_dir",
+   "./package.sw_emu",
+   "-o",
+   "./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:24:03 2024",
+ "timestampMillis": "1727533443321",
+ "status": {
+  "cmdId": "fea40ea5-e541-4b95-a9db-9d7017ab3f6a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Sep 28 22:24:06 2024",
+ "timestampMillis": "1727533446363",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_PACKAGE",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "real_matmul",
+    "file": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [],
+  "toolVersion": "Vitis V++ Compiler Release 2024.1. SW Build 5074859 on 2024-05-20-23:21:20",
+  "inputBinaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "real_matmul.link",
+    "file": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin",
+    "reports": [],
+    "uuid": "330aebd5-26f6-4cd5-868d-2097309c456a"
+   },
+   "kernels": []
+  }
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:24:06 2024",
+ "timestampMillis": "1727533446573",
+ "status": {
+  "cmdId": "fea40ea5-e541-4b95-a9db-9d7017ab3f6a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:06 2024",
+ "timestampMillis": "1727533446711",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x/reports/package/v++_package_real_matmul_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:06 2024",
+ "timestampMillis": "1727533446712",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x/v++_package_real_matmul_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

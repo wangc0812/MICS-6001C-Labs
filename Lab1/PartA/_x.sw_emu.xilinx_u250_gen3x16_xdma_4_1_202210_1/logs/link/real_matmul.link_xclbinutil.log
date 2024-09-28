@@ -1,0 +1,57 @@
+XRT Build Version: 2.17.319 (2024.1)
+       Build Date: 2024-05-20 03:18:29
+          Hash ID: a75e9843c875bac0f52d34a1763e39e16fb3c9a7
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 430768 bytes
+Format : RAW
+File   : '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.so'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+WARNING: Skipping CLOCK_FREQ_TOPOLOGY section for count size is zero.
+WARNING: Section 'CLOCK_FREQ_TOPOLOGY' content is empty.  No data in the given JSON file.
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was empty.  No action taken.
+Format : JSON
+File   : '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 2096 bytes
+Format : JSON
+File   : '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 2455 bytes
+Format : RAW
+File   : '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/real_matmul.link.xml'
+
+Section: 'DEBUG_DATA'(4) was successfully added.
+Size   : 0 bytes
+Format : RAW
+File   : '/dev/null'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 8377 bytes
+Format : RAW
+File   : '/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json'
+
+Section: 'PARTITION_METADATA'(20) was successfully appended to.
+Format : JSON
+File   : 'partition_metadata'
+
+Section: 'IP_LAYOUT'(8) was successfully appended to.
+Format : JSON
+File   : 'ip_layout'
+Successfully wrote (456936 bytes) to the output file: /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/./build_dir/sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.link.xclbin
+Leaving xclbinutil.

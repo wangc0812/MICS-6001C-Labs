@@ -1,0 +1,186 @@
+Sat Sep 28 22:21:32 2024: Running xcd server. This server was built by gradle.
+Sat Sep 28 22:21:32 2024: Server was asked to start on port: '40299'
+Sat Sep 28 22:21:32 2024: Server is using token UUID: 'b2745862-a612-4e48-b755-9f976949fc41'
+Sat Sep 28 22:21:32 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Sep 28 22:21:32 2024: Attempting to start server on port '40299'
+Sat Sep 28 22:21:32 2024: XCD main fifo: created main fifo '/tmp/xcdmainb2745862-a612-4e48-b755-9f976949fc41', fd read = 13
+Sat Sep 28 22:21:32 2024: Running Dispatch Server
+Sat Sep 28 22:21:32 2024: Version 2.2.0
+Sat Sep 28 22:21:34 2024: Dispatch Server: Accepted socket connection from client
+Sat Sep 28 22:21:34 2024: Starting Socket connection
+Sat Sep 28 22:21:34 2024: EXCHANGE_TOKEN received, server token: b2745862-a612-4e48-b755-9f976949fc41, passed token: b2745862-a612-4e48-b755-9f976949fc41
+Sat Sep 28 22:21:34 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Sep 28 22:21:34 2024: SESSION_MGR: creating session with session uuid: '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:34 2024: KERNEL_SVC: creating session with uuid: '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:34 2024: GUIDANCE_SMGR: creating guidance session with uuid: '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:34 2024: SYSTEM_DIAGRAM: creating session with uuid: '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:53 2024: SESSION_MGR: closing session for UUID '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:53 2024: KERNEL_SVC: closing session for UUID '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:53 2024: GUIDANCE_SMGR: closing session for UUID '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:54 2024: SYSTEM_DIAGRAM: closing session for UUID '31b01524-8ae3-40e3-a1c6-ea6bf085a1cf' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:21:54 2024: STOP_SERVER received, server token: b2745862-a612-4e48-b755-9f976949fc41, passed token: b2745862-a612-4e48-b755-9f976949fc41
+Sat Sep 28 22:21:54 2024: Socket received request to stop server.
+Sat Sep 28 22:21:54 2024: Dispatch Server: do_await_stop
+Sat Sep 28 22:21:54 2024: Dispatch Server: stopping mainFifo_
+Sat Sep 28 22:21:54 2024: XCD main fifo: Stopping
+Sat Sep 28 22:21:54 2024: XCD main fifo: do_read error code: Operation canceled
+Sat Sep 28 22:21:54 2024: XCD main fifo: bytes_transferred: 0
+Sat Sep 28 22:21:54 2024: SERVER: destructor for server bound to port 40299
+Sat Sep 28 22:21:54 2024: XCD main fifo: Good unlink of /tmp/xcdmainb2745862-a612-4e48-b755-9f976949fc41
+Sat Sep 28 22:21:54 2024: Server exiting with status 0.
+Sat Sep 28 22:21:54 2024: Closing log file.
+Sat Sep 28 22:21:56 2024: Running xcd server. This server was built by gradle.
+Sat Sep 28 22:21:56 2024: Server was asked to start on port: '40175'
+Sat Sep 28 22:21:56 2024: Server is using token UUID: 'a9627a42-a03a-464a-9b6a-8d1f3c97b017'
+Sat Sep 28 22:21:56 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Sep 28 22:21:56 2024: Attempting to start server on port '40175'
+Sat Sep 28 22:21:56 2024: XCD main fifo: created main fifo '/tmp/xcdmaina9627a42-a03a-464a-9b6a-8d1f3c97b017', fd read = 13
+Sat Sep 28 22:21:56 2024: Running Dispatch Server
+Sat Sep 28 22:21:56 2024: Version 2.2.0
+Sat Sep 28 22:21:58 2024: Dispatch Server: Accepted socket connection from client
+Sat Sep 28 22:21:58 2024: Starting Socket connection
+Sat Sep 28 22:21:58 2024: EXCHANGE_TOKEN received, server token: a9627a42-a03a-464a-9b6a-8d1f3c97b017, passed token: a9627a42-a03a-464a-9b6a-8d1f3c97b017
+Sat Sep 28 22:21:58 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Sep 28 22:21:58 2024: SESSION_MGR: creating session with session uuid: '15d859d5-1393-4357-ace0-2f80f517369b' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:21:58 2024: KERNEL_SVC: creating session with uuid: '15d859d5-1393-4357-ace0-2f80f517369b' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:21:58 2024: GUIDANCE_SMGR: creating guidance session with uuid: '15d859d5-1393-4357-ace0-2f80f517369b' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:21:58 2024: SYSTEM_DIAGRAM: creating session with uuid: '15d859d5-1393-4357-ace0-2f80f517369b' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:22:05 2024: SESSION_MGR: closing session for UUID '15d859d5-1393-4357-ace0-2f80f517369b' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:22:05 2024: KERNEL_SVC: closing session for UUID '15d859d5-1393-4357-ace0-2f80f517369b' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:22:05 2024: GUIDANCE_SMGR: closing session for UUID '15d859d5-1393-4357-ace0-2f80f517369b' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:22:05 2024: SYSTEM_DIAGRAM: closing session for UUID '15d859d5-1393-4357-ace0-2f80f517369b' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:22:05 2024: STOP_SERVER received, server token: a9627a42-a03a-464a-9b6a-8d1f3c97b017, passed token: a9627a42-a03a-464a-9b6a-8d1f3c97b017
+Sat Sep 28 22:22:05 2024: Socket received request to stop server.
+Sat Sep 28 22:22:05 2024: Dispatch Server: do_await_stop
+Sat Sep 28 22:22:05 2024: Dispatch Server: stopping mainFifo_
+Sat Sep 28 22:22:05 2024: XCD main fifo: Stopping
+Sat Sep 28 22:22:05 2024: XCD main fifo: do_read error code: Operation canceled
+Sat Sep 28 22:22:05 2024: XCD main fifo: bytes_transferred: 0
+Sat Sep 28 22:22:05 2024: SERVER: destructor for server bound to port 40175
+Sat Sep 28 22:22:05 2024: XCD main fifo: Good unlink of /tmp/xcdmaina9627a42-a03a-464a-9b6a-8d1f3c97b017
+Sat Sep 28 22:22:05 2024: Server exiting with status 0.
+Sat Sep 28 22:22:05 2024: Closing log file.
+Sat Sep 28 22:22:07 2024: Running xcd server. This server was built by gradle.
+Sat Sep 28 22:22:07 2024: Server was asked to start on port: '45031'
+Sat Sep 28 22:22:07 2024: Server is using token UUID: 'fa1f3439-3113-4fff-afbc-78e01b15b156'
+Sat Sep 28 22:22:07 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Sep 28 22:22:07 2024: Attempting to start server on port '45031'
+Sat Sep 28 22:22:07 2024: XCD main fifo: created main fifo '/tmp/xcdmainfa1f3439-3113-4fff-afbc-78e01b15b156', fd read = 13
+Sat Sep 28 22:22:07 2024: Running Dispatch Server
+Sat Sep 28 22:22:07 2024: Version 2.2.0
+Sat Sep 28 22:22:09 2024: Dispatch Server: Accepted socket connection from client
+Sat Sep 28 22:22:09 2024: Starting Socket connection
+Sat Sep 28 22:22:09 2024: EXCHANGE_TOKEN received, server token: fa1f3439-3113-4fff-afbc-78e01b15b156, passed token: fa1f3439-3113-4fff-afbc-78e01b15b156
+Sat Sep 28 22:22:09 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Sep 28 22:22:09 2024: SESSION_MGR: creating session with session uuid: '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' and name 'v++_package_real_matmul'
+Sat Sep 28 22:22:09 2024: KERNEL_SVC: creating session with uuid: '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' and name 'v++_package_real_matmul'
+Sat Sep 28 22:22:09 2024: GUIDANCE_SMGR: creating guidance session with uuid: '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' and name 'v++_package_real_matmul'
+Sat Sep 28 22:22:09 2024: SYSTEM_DIAGRAM: creating session with uuid: '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' and name 'v++_package_real_matmul'
+Sat Sep 28 22:22:12 2024: SESSION_MGR: closing session for UUID '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' with name 'v++_package_real_matmul'
+Sat Sep 28 22:22:12 2024: KERNEL_SVC: closing session for UUID '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' with name 'v++_package_real_matmul'
+Sat Sep 28 22:22:12 2024: GUIDANCE_SMGR: closing session for UUID '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' with name 'v++_package_real_matmul'
+Sat Sep 28 22:22:12 2024: SYSTEM_DIAGRAM: closing session for UUID '817716a0-ba8f-47c6-a4b9-3eb51af5c20c' with name 'v++_package_real_matmul'
+Sat Sep 28 22:22:12 2024: STOP_SERVER received, server token: fa1f3439-3113-4fff-afbc-78e01b15b156, passed token: fa1f3439-3113-4fff-afbc-78e01b15b156
+Sat Sep 28 22:22:12 2024: Socket received request to stop server.
+Sat Sep 28 22:22:12 2024: Dispatch Server: do_await_stop
+Sat Sep 28 22:22:12 2024: Dispatch Server: stopping mainFifo_
+Sat Sep 28 22:22:12 2024: XCD main fifo: Stopping
+Sat Sep 28 22:22:12 2024: XCD main fifo: do_read error code: Operation canceled
+Sat Sep 28 22:22:12 2024: XCD main fifo: bytes_transferred: 0
+Sat Sep 28 22:22:12 2024: SERVER: destructor for server bound to port 45031
+Sat Sep 28 22:22:12 2024: XCD main fifo: Good unlink of /tmp/xcdmainfa1f3439-3113-4fff-afbc-78e01b15b156
+Sat Sep 28 22:22:12 2024: Server exiting with status 0.
+Sat Sep 28 22:22:12 2024: Closing log file.
+Sat Sep 28 22:23:26 2024: Running xcd server. This server was built by gradle.
+Sat Sep 28 22:23:26 2024: Server was asked to start on port: '45581'
+Sat Sep 28 22:23:26 2024: Server is using token UUID: 'dc3d564e-bf35-49ca-a0ba-de2ba550e223'
+Sat Sep 28 22:23:26 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Sep 28 22:23:26 2024: Attempting to start server on port '45581'
+Sat Sep 28 22:23:26 2024: XCD main fifo: created main fifo '/tmp/xcdmaindc3d564e-bf35-49ca-a0ba-de2ba550e223', fd read = 13
+Sat Sep 28 22:23:26 2024: Running Dispatch Server
+Sat Sep 28 22:23:26 2024: Version 2.2.0
+Sat Sep 28 22:23:28 2024: Dispatch Server: Accepted socket connection from client
+Sat Sep 28 22:23:28 2024: Starting Socket connection
+Sat Sep 28 22:23:28 2024: EXCHANGE_TOKEN received, server token: dc3d564e-bf35-49ca-a0ba-de2ba550e223, passed token: dc3d564e-bf35-49ca-a0ba-de2ba550e223
+Sat Sep 28 22:23:28 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Sep 28 22:23:28 2024: SESSION_MGR: creating session with session uuid: '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:28 2024: KERNEL_SVC: creating session with uuid: '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:28 2024: GUIDANCE_SMGR: creating guidance session with uuid: '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:28 2024: SYSTEM_DIAGRAM: creating session with uuid: '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' and name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:47 2024: SESSION_MGR: closing session for UUID '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:47 2024: KERNEL_SVC: closing session for UUID '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:47 2024: GUIDANCE_SMGR: closing session for UUID '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:47 2024: SYSTEM_DIAGRAM: closing session for UUID '4ba8e14e-f544-4f7b-bf51-4827a32a5e12' with name 'v++_compile_real_matmul'
+Sat Sep 28 22:23:48 2024: STOP_SERVER received, server token: dc3d564e-bf35-49ca-a0ba-de2ba550e223, passed token: dc3d564e-bf35-49ca-a0ba-de2ba550e223
+Sat Sep 28 22:23:48 2024: Socket received request to stop server.
+Sat Sep 28 22:23:48 2024: Dispatch Server: do_await_stop
+Sat Sep 28 22:23:48 2024: Dispatch Server: stopping mainFifo_
+Sat Sep 28 22:23:48 2024: XCD main fifo: Stopping
+Sat Sep 28 22:23:48 2024: XCD main fifo: do_read error code: Operation canceled
+Sat Sep 28 22:23:48 2024: XCD main fifo: bytes_transferred: 0
+Sat Sep 28 22:23:48 2024: SERVER: destructor for server bound to port 45581
+Sat Sep 28 22:23:48 2024: XCD main fifo: Good unlink of /tmp/xcdmaindc3d564e-bf35-49ca-a0ba-de2ba550e223
+Sat Sep 28 22:23:48 2024: Server exiting with status 0.
+Sat Sep 28 22:23:48 2024: Closing log file.
+Sat Sep 28 22:23:50 2024: Running xcd server. This server was built by gradle.
+Sat Sep 28 22:23:50 2024: Server was asked to start on port: '43729'
+Sat Sep 28 22:23:50 2024: Server is using token UUID: 'b9a6a0c5-d340-4cd0-817c-1fbde6f75d74'
+Sat Sep 28 22:23:50 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Sep 28 22:23:50 2024: Attempting to start server on port '43729'
+Sat Sep 28 22:23:50 2024: XCD main fifo: created main fifo '/tmp/xcdmainb9a6a0c5-d340-4cd0-817c-1fbde6f75d74', fd read = 13
+Sat Sep 28 22:23:50 2024: Running Dispatch Server
+Sat Sep 28 22:23:50 2024: Version 2.2.0
+Sat Sep 28 22:23:52 2024: Dispatch Server: Accepted socket connection from client
+Sat Sep 28 22:23:52 2024: Starting Socket connection
+Sat Sep 28 22:23:52 2024: EXCHANGE_TOKEN received, server token: b9a6a0c5-d340-4cd0-817c-1fbde6f75d74, passed token: b9a6a0c5-d340-4cd0-817c-1fbde6f75d74
+Sat Sep 28 22:23:52 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Sep 28 22:23:52 2024: SESSION_MGR: creating session with session uuid: '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:52 2024: KERNEL_SVC: creating session with uuid: '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:52 2024: GUIDANCE_SMGR: creating guidance session with uuid: '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:52 2024: SYSTEM_DIAGRAM: creating session with uuid: '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' and name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:59 2024: SESSION_MGR: closing session for UUID '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:59 2024: KERNEL_SVC: closing session for UUID '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:59 2024: GUIDANCE_SMGR: closing session for UUID '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:59 2024: SYSTEM_DIAGRAM: closing session for UUID '7bc881d2-ad4c-400a-be9b-1013d3c6c4af' with name 'v++_link_real_matmul.link'
+Sat Sep 28 22:23:59 2024: STOP_SERVER received, server token: b9a6a0c5-d340-4cd0-817c-1fbde6f75d74, passed token: b9a6a0c5-d340-4cd0-817c-1fbde6f75d74
+Sat Sep 28 22:23:59 2024: Socket received request to stop server.
+Sat Sep 28 22:23:59 2024: Dispatch Server: do_await_stop
+Sat Sep 28 22:23:59 2024: Dispatch Server: stopping mainFifo_
+Sat Sep 28 22:23:59 2024: XCD main fifo: Stopping
+Sat Sep 28 22:23:59 2024: XCD main fifo: do_read error code: Operation canceled
+Sat Sep 28 22:23:59 2024: XCD main fifo: bytes_transferred: 0
+Sat Sep 28 22:23:59 2024: SERVER: destructor for server bound to port 43729
+Sat Sep 28 22:23:59 2024: XCD main fifo: Good unlink of /tmp/xcdmainb9a6a0c5-d340-4cd0-817c-1fbde6f75d74
+Sat Sep 28 22:23:59 2024: Server exiting with status 0.
+Sat Sep 28 22:23:59 2024: Closing log file.
+Sat Sep 28 22:24:01 2024: Running xcd server. This server was built by gradle.
+Sat Sep 28 22:24:01 2024: Server was asked to start on port: '36291'
+Sat Sep 28 22:24:01 2024: Server is using token UUID: '95107527-64f5-4648-bf9a-5c842c259574'
+Sat Sep 28 22:24:01 2024: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Sat Sep 28 22:24:01 2024: Attempting to start server on port '36291'
+Sat Sep 28 22:24:01 2024: XCD main fifo: created main fifo '/tmp/xcdmain95107527-64f5-4648-bf9a-5c842c259574', fd read = 13
+Sat Sep 28 22:24:01 2024: Running Dispatch Server
+Sat Sep 28 22:24:01 2024: Version 2.2.0
+Sat Sep 28 22:24:03 2024: Dispatch Server: Accepted socket connection from client
+Sat Sep 28 22:24:03 2024: Starting Socket connection
+Sat Sep 28 22:24:03 2024: EXCHANGE_TOKEN received, server token: 95107527-64f5-4648-bf9a-5c842c259574, passed token: 95107527-64f5-4648-bf9a-5c842c259574
+Sat Sep 28 22:24:03 2024: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Sat Sep 28 22:24:03 2024: SESSION_MGR: creating session with session uuid: '5306e0a6-b0b6-416d-b768-284304c27404' and name 'v++_package_real_matmul'
+Sat Sep 28 22:24:03 2024: KERNEL_SVC: creating session with uuid: '5306e0a6-b0b6-416d-b768-284304c27404' and name 'v++_package_real_matmul'
+Sat Sep 28 22:24:03 2024: GUIDANCE_SMGR: creating guidance session with uuid: '5306e0a6-b0b6-416d-b768-284304c27404' and name 'v++_package_real_matmul'
+Sat Sep 28 22:24:03 2024: SYSTEM_DIAGRAM: creating session with uuid: '5306e0a6-b0b6-416d-b768-284304c27404' and name 'v++_package_real_matmul'
+Sat Sep 28 22:24:06 2024: SESSION_MGR: closing session for UUID '5306e0a6-b0b6-416d-b768-284304c27404' with name 'v++_package_real_matmul'
+Sat Sep 28 22:24:06 2024: KERNEL_SVC: closing session for UUID '5306e0a6-b0b6-416d-b768-284304c27404' with name 'v++_package_real_matmul'
+Sat Sep 28 22:24:06 2024: GUIDANCE_SMGR: closing session for UUID '5306e0a6-b0b6-416d-b768-284304c27404' with name 'v++_package_real_matmul'
+Sat Sep 28 22:24:06 2024: SYSTEM_DIAGRAM: closing session for UUID '5306e0a6-b0b6-416d-b768-284304c27404' with name 'v++_package_real_matmul'
+Sat Sep 28 22:24:06 2024: STOP_SERVER received, server token: 95107527-64f5-4648-bf9a-5c842c259574, passed token: 95107527-64f5-4648-bf9a-5c842c259574
+Sat Sep 28 22:24:06 2024: Socket received request to stop server.
+Sat Sep 28 22:24:06 2024: Dispatch Server: do_await_stop
+Sat Sep 28 22:24:06 2024: Dispatch Server: stopping mainFifo_
+Sat Sep 28 22:24:06 2024: XCD main fifo: Stopping
+Sat Sep 28 22:24:06 2024: XCD main fifo: do_read error code: Operation canceled
+Sat Sep 28 22:24:06 2024: XCD main fifo: bytes_transferred: 0
+Sat Sep 28 22:24:06 2024: SERVER: destructor for server bound to port 36291
+Sat Sep 28 22:24:06 2024: XCD main fifo: Good unlink of /tmp/xcdmain95107527-64f5-4648-bf9a-5c842c259574
+Sat Sep 28 22:24:06 2024: Server exiting with status 0.
+Sat Sep 28 22:24:06 2024: Closing log file.

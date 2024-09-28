@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/build_hls.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Sep 28 22:24:27 2024",
+ "timestampMillis": "1727533467074",
+ "buildStep": {
+  "cmdId": "5d68a92c-adf8-4292-9bdc-ba3bfd3cb322",
+  "name": "v++",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/logs/build_hls.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  -c --mode hls --config ./hls_config.cfg --work_dir ./build_hls ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "./hls_config.cfg",
+   "--work_dir",
+   "./build_hls"
+  ],
+  "iniFiles": [
+   {
+    "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/hls_config.cfg",
+    "content": "part=xcu250-figd2104-2l-e\n\n[hls]\nsyn.file=./src/real_matmul.cpp\nsyn.top=real_matmul\ntb.file=./src/tb_main.cpp\n\nflow_target=vitis\nclock=8ns\nclock_uncertainty=12%\nsyn.output.format=rtl\n"
+   }
+  ],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:24:27 2024",
+ "timestampMillis": "1727533467075",
+ "status": {
+  "cmdId": "5d68a92c-adf8-4292-9bdc-ba3bfd3cb322",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Sep 28 22:24:32 2024",
+ "timestampMillis": "1727533472249",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "real_matmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src/real_matmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:24:32 2024",
+ "timestampMillis": "1727533472251",
+ "buildStep": {
+  "cmdId": "c4ba8d19-b3c9-466b-9406-d255c9bb34f9",
+  "name": "csynth_design",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:24:32 2024",
+ "timestampMillis": "1727533472252",
+ "status": {
+  "cmdId": "c4ba8d19-b3c9-466b-9406-d255c9bb34f9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:32 2024",
+ "timestampMillis": "1727533472252",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:32 2024",
+ "timestampMillis": "1727533472253",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:32 2024",
+ "timestampMillis": "1727533472254",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:53 2024",
+ "timestampMillis": "1727533493238",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:53 2024",
+ "timestampMillis": "1727533493239",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:53 2024",
+ "timestampMillis": "1727533493240",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:24:53 2024",
+ "timestampMillis": "1727533493241",
+ "status": {
+  "cmdId": "c4ba8d19-b3c9-466b-9406-d255c9bb34f9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:24:53 2024",
+ "timestampMillis": "1727533493584",
+ "status": {
+  "cmdId": "5d68a92c-adf8-4292-9bdc-ba3bfd3cb322",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:53 2024",
+ "timestampMillis": "1727533493741",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/reports/v++_compile_build_hls_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:24:53 2024",
+ "timestampMillis": "1727533493742",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/build_hls/reports/.db/v++_compile_build_hls_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

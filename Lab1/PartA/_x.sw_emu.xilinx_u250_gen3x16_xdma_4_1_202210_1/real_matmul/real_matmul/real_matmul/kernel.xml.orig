@@ -1,0 +1,16 @@
+<root versionMajor="1" versionMinor="5">
+    <kernel name="real_matmul" language="c" vlnv="xilinx.com:hls:real_matmul:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="true" compileOptions="-g -I /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src" profileType="none" hwControlProtocol="ap_ctrl_chain" interrupt="true" swReset="false" mailbox="none" countedAutoRestart="0" deadlockDetection="local">
+        <ports>
+            <port name="M_AXI_MEM" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="16"/>
+            <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x34" dataWidth="32"/>
+        </ports>
+        <args>
+            <arg id="0" name="MatA_DRAM" addressQualifier="1" port="M_AXI_MEM" hostOffset="0x0" hostSize="0x8" offset="0x10" size="0x8" type="void*"/>
+            <arg id="1" name="MatB_DRAM" addressQualifier="1" port="M_AXI_MEM" hostOffset="0x0" hostSize="0x8" offset="0x1C" size="0x8" type="void*"/>
+            <arg id="2" name="MatC_DRAM" addressQualifier="1" port="M_AXI_MEM" hostOffset="0x0" hostSize="0x8" offset="0x28" size="0x8" type="void*"/>
+        </args>
+        <compileWorkGroupSize x="1" y="1" z="1"/>
+        <maxWorkGroupSize x="1" y="1" z="1"/>
+    </kernel>
+</root>
+

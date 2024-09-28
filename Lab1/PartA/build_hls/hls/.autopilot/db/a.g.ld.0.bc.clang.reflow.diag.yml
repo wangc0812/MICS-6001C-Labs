@@ -1,0 +1,453 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/real_matmul.cpp, Line: 62, Column: 13 }
+Function:        real_matmul
+Args:            
+  - String:          'Loop '''
+  - LoopName:        INNER_ROW_COL
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+Function:        real_matmul
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        INNER_ROW_COL
+  - String:          ''' ('
+  - LoopLoc:         'src/real_matmul.cpp:62:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          real_matmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '150'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_real_matmul_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            MatC_DRAM
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_real_matmul_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            MatB_DRAM
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_real_matmul_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            MatA_DRAM
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: src/real_matmul.cpp, Line: 21, Column: 9 }
+Function:        real_matmul
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          MatA
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-reshape
+Name:            ArrayXform
+DebugLoc:        { File: src/real_matmul.cpp, Line: 22, Column: 12 }
+Function:        real_matmul
+Args:            
+  - String:          'Applying '
+  - String:          array_reshape
+  - String:          ' to '''
+  - UOName:          MatB
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' reshaping'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/real_matmul.cpp, Line: 27, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '15000'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        MatA_DRAM349seq
+  - ArrayName:       MatA_DRAM
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        MAT_A_ROWS
+  - String:          ' '
+  - LoopLoc:         'src/real_matmul.cpp:27:5'
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 30, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/real_matmul.cpp, Line: 36, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '30000'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        MatB_DRAM350seq
+  - ArrayName:       MatB_DRAM
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        MAT_B_ROWS
+  - String:          ' '
+  - LoopLoc:         'src/real_matmul.cpp:36:5'
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 39, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          for.inc32.load.7
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/real_matmul.cpp, Line: 71, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '20000'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        MatC_DRAM351seq
+  - ArrayName:       MatC_DRAM
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        MAT_C_ROWS
+  - String:          ' '
+  - LoopLoc:         'src/real_matmul.cpp:71:5'
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 74, Column: 29 }
+  - OrigDirection:   write
+  - OrigID:          for.inc112.store.8
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: src/real_matmul.cpp, Line: 71, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - OrigLength:      '20000'
+  - String:          ' x '
+  - OrigWords:       '16'
+  - String:          'bit words has been widened by '
+  - Factor:          '8'
+  - String:          ': '
+  - Length:          '2500'
+  - String:          ' x '
+  - Words:           '128'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 71, Column: 5 }
+  - OrigDirection:   write
+  - OrigID:          MatC_DRAM351seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq
+  - ArrayName:       MatC_DRAM
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        MAT_C_COLS
+  - String:          ' '
+  - LoopLoc:         'src/real_matmul.cpp:73:9'
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: src/real_matmul.cpp, Line: 36, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - OrigLength:      '30000'
+  - String:          ' x '
+  - OrigWords:       '16'
+  - String:          'bit words has been widened by '
+  - Factor:          '8'
+  - String:          ': '
+  - Length:          '3750'
+  - String:          ' x '
+  - Words:           '128'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 36, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          MatB_DRAM350seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq352
+  - ArrayName:       MatB_DRAM
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        MAT_B_COLS
+  - String:          ' '
+  - LoopLoc:         'src/real_matmul.cpp:38:9'
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-widen
+Name:            BurstWidened
+DebugLoc:        { File: src/real_matmul.cpp, Line: 27, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - OrigLength:      '15000'
+  - String:          ' x '
+  - OrigWords:       '16'
+  - String:          'bit words has been widened by '
+  - Factor:          '2'
+  - String:          ': '
+  - Length:          '7500'
+  - String:          ' x '
+  - Words:           '32'
+  - String:          bit words
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 27, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          MatA_DRAM349seq
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        wseq354
+  - ArrayName:       MatA_DRAM
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - LoopName:        MAT_A_COLS
+  - String:          ' '
+  - LoopLoc:         'src/real_matmul.cpp:29:9'
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_A_COLS
+  - String:          '> at '
+  - LoopLoc:         'src/real_matmul.cpp:29:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_B_COLS
+  - String:          '> at '
+  - LoopLoc:         'src/real_matmul.cpp:38:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_C_COLS_INIT
+  - String:          '> at '
+  - LoopLoc:         'src/real_matmul.cpp:50:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_C_COLS
+  - String:          '> at '
+  - LoopLoc:         'src/real_matmul.cpp:73:9'
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-supported-subset
+Name:            MismatchPortAndBurstAccessWidth
+DebugLoc:        { File: src/real_matmul.cpp, Line: 27, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 27, Column: 5 }
+  - OrigDirection:   read
+  - OrigID:          wseq354
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      MatA_DRAM
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/real_matmul.cpp, Line: 36, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3750'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/real_matmul.cpp, Line: 36, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3750'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/real_matmul.cpp, Line: 71, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '2500'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      mem
+  - String:          ' '
+  - Function:        real_matmul
+    DebugLoc:        { File: src/real_matmul.cpp, Line: 14, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/real_matmul.cpp, Line: 71, Column: 5 }
+Function:        real_matmul
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '2500'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      mem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

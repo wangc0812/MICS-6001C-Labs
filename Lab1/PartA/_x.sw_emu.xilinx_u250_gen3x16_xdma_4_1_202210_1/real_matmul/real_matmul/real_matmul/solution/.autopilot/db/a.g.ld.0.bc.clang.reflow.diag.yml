@@ -1,0 +1,66 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../../../src/real_matmul.cpp, Line: 62, Column: 13 }
+Function:        real_matmul
+Args:            
+  - String:          'Loop '''
+  - LoopName:        INNER_ROW_COL
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../../../src/real_matmul.cpp, Line: 14, Column: 0 }
+Function:        real_matmul
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        INNER_ROW_COL
+  - String:          ''' ('
+  - LoopLoc:         '../../../src/real_matmul.cpp:62:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          real_matmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '150'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_A_COLS
+  - String:          '> at '
+  - LoopLoc:         '../../../src/real_matmul.cpp:29:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_B_COLS
+  - String:          '> at '
+  - LoopLoc:         '../../../src/real_matmul.cpp:38:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_C_COLS_INIT
+  - String:          '> at '
+  - LoopLoc:         '../../../src/real_matmul.cpp:50:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        MAT_C_COLS
+  - String:          '> at '
+  - LoopLoc:         '../../../src/real_matmul.cpp:73:9'
+  - String:          ' '
+...

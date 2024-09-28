@@ -1,0 +1,169 @@
+<ENTRY>
+{
+ "thisFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:28 2024",
+ "timestampMillis": "1727533408465",
+ "buildStep": {
+  "cmdId": "237ce827-cd2b-4adf-8960-5ec650797c57",
+  "name": "v++",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -g --save-temps -t sw_emu --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 -k real_matmul --temp_dir ./_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1 -Isrc -o_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xo src/real_matmul.cpp ",
+  "args": [
+   "-c",
+   "-g",
+   "--save-temps",
+   "-t",
+   "sw_emu",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-k",
+   "real_matmul",
+   "--temp_dir",
+   "./_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-Isrc",
+   "-o_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xo",
+   "src/real_matmul.cpp"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:28 2024",
+ "timestampMillis": "1727533408467",
+ "status": {
+  "cmdId": "237ce827-cd2b-4adf-8960-5ec650797c57",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Sep 28 22:23:31 2024",
+ "timestampMillis": "1727533411405",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "real_matmul",
+     "file": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/src/real_matmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2024.1. SW Build 5074859 on 2024-05-20-23:21:20"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Sep 28 22:23:31 2024",
+ "timestampMillis": "1727533411417",
+ "buildStep": {
+  "cmdId": "b61759b6-6cd0-4ca3-9051-0ebf97157514",
+  "name": "vitis_hls",
+  "logFile": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/vitis_hls.log",
+  "commandLine": "vitis_hls -f /data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/real_matmul/real_matmul/real_matmul.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:31 2024",
+ "timestampMillis": "1727533411419",
+ "status": {
+  "cmdId": "b61759b6-6cd0-4ca3-9051-0ebf97157514",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:47 2024",
+ "timestampMillis": "1727533427750",
+ "status": {
+  "cmdId": "b61759b6-6cd0-4ca3-9051-0ebf97157514",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Sep 28 22:23:47 2024",
+ "timestampMillis": "1727533427839",
+ "status": {
+  "cmdId": "237ce827-cd2b-4adf-8960-5ec650797c57",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:23:47 2024",
+ "timestampMillis": "1727533427998",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/real_matmul/v++_compile_real_matmul_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Sep 28 22:23:48 2024",
+ "timestampMillis": "1727533428000",
+ "report": {
+  "path": "/data-ssd/home/cong/MICS-6001C-Labs/Lab1/PartA/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/v++_compile_real_matmul_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

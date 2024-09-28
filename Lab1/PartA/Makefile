@@ -9,7 +9,7 @@ CURRENT_DIR := $(shell pwd)
 ROOT_DIR := $(abspath $(CURRENT_DIR)/../..)
 COMMON_DIR := $(ROOT_DIR)/common
 TEMP_DIR := ./_x.$(TARGET).$(XSA)
-BUILD_DIR := ./build_dir.$(TARGET).$(XSA)
+BUILD_DIR := ./build_dir/$(TARGET).$(XSA)
 KERNEL_BUILD_DIR := ./build_hls
 LINK_OUTPUT := $(BUILD_DIR)/real_matmul.link.xclbin
 PACKAGE_OUT = ./package.$(TARGET)
@@ -18,6 +18,14 @@ VPP_PFLAGS :=
 CMD_ARGS = $(BUILD_DIR)/real_matmul.xclbin
 CXXFLAGS += -I$(XILINX_XRT)/include -I$(XILINX_VIVADO)/include -I$(XILINX_HLS)/include -Wall -O0 -g -std=c++1y
 LDFLAGS += -L$(XILINX_XRT)/lib -pthread -lOpenCL
+
+
+create_build_folders:
+	mkdir -p $(BUILD_DIR)
+	mkdir -p $(KERNEL_BUILD_DIR)
+	mkdir -p $(PACKAGE_OUT)
+	mkdir -p $(TEMP_DIR)
+
 
 ########################## Checking if PLATFORM in allowlist #######################
 PLATFORM_BLOCKLIST += nodma 
@@ -41,7 +49,7 @@ EMCONFIG_DIR = $(TEMP_DIR)
 
 ############################## Setting Targets ##############################
 .PHONY: all clean cleanall docs emconfig
-all: check-platform   check-vitis $(EXECUTABLE) $(BUILD_DIR)/real_matmul.xclbin emconfig
+all: create_build_folders check-platform   check-vitis $(EXECUTABLE) $(BUILD_DIR)/real_matmul.xclbin emconfig
 
 .PHONY: host
 host: $(EXECUTABLE)
